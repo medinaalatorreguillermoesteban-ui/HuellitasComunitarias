@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Comunitarias - Donaciones</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fdfbf7;
+            color: #333333;
+        }
+        header {
+            background: #4a6b53;
+            color: white;
+            padding: 15px 20px;
+            border-bottom: 4px solid #e0a96d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #ffffff;
+        }
+        .barra-navegacion {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .botoncito-nav {
+            background: #38523f;
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .botoncito-nav.activo {
+            background: #e0a96d;
+            color: #333333;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            min-height: 500px;
+        }
+        aside {
+            width: 25%;
+            background: #f4ece1;
+            padding: 15px;
+            border-right: 2px solid #e0a96d;
+        }
+        section {
+            width: 75%;
+            background: #ffffff;
+            padding: 20px;
+        }
+        .sidebar-widget {
+            background: #ffffff;
+            border: 1px solid #dcdcdc;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .sidebar-widget h4 {
+            margin-top: 0;
+            border-bottom: 2px solid #e0a96d;
+            padding-bottom: 5px;
+            color: #4a6b53;
+        }
+        .sidebar-list {
+            padding-left: 18px;
+            margin: 0;
+            font-size: 13px;
+        }
+        .sidebar-list li {
+            padding: 4px 0;
+        }
+        .tarjeta-info {
+            background: #f9f9f9;
+            border: 1px solid #dddddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .tarjeta-info h3 {
+            margin-top: 0;
+            color: #4a6b53;
+        }
+        .img-donaciones {
+            width: 100%;
+            max-height: 220px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        ul.lista-necesidades {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        footer {
+            background: #333333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 13px;
+        }
+        @media (max-width: 700px) {
+            main { display: block; }
+            aside, section { width: 100%; }
+            header { flex-direction: column; text-align: center; }
+            .barra-navegacion { justify-content: center; margin-top: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Huellitas Comunitarias</h1>
+            <nav class="barra-navegacion">
+                <a href="index.html" class="botoncito-nav">Inicio</a>
+                <a href="adopciones.html" class="botoncito-nav">Adopciones</a>
+                <a href="donaciones.html" class="botoncito-nav activo">Donaciones</a>
+            </nav>
+        </div>
+        <img src="img/logo.jpg" alt="Logo Huellitas Comunitarias" style="width: 80px; height: auto; border-radius: 50%;">
+    </header>
+
+    <main>
+        <aside>
+            <div class="sidebar-widget">
+                <h4>Centro de Acopio</h4>
+                <p style="font-size: 13px; margin: 0;">
+                    <strong>Lugar:</strong> CBTis No. 116<br>
+                    <strong>Horario:</strong> Lunes a Viernes de 8:00 AM a 2:00 PM<br>
+                    <strong>Contacto:</strong> 664 797 8827
+                </p>
+            </div>
+        </aside>
+
+        <section>
+            <article>
+                <h2>Centro de Donaciones y Suministros</h2>
+                <p>Tus donaciones nos ayudan a mantener alimentados y limpios a los perritos y gatitos rescatados mientras esperan un hogar.</p>
+
+                <!-- Imagen descriptiva de donaciones -->
+                <img src="img/alimento-suministros.jpg" alt="Donaciones de alimentos y suministros" class="img-donaciones">
+
+                <div class="tarjeta-info">
+                    <h3>Artículos que recibimos</h3>
+                    <ul class="lista-necesidades">
+                        <li><strong>Alimentos:</strong> Croquetas para perro y gato (cachorros y adultos), sobres de comida húmeda.</li>
+                        <li><strong>Artículos de Limpieza:</strong> Cloro, limpiador multiusos, jabón líquido, escobas y bolsas para basura.</li>
+                        <li><strong>Accesorios y Cuidado:</strong> Cobijas, camitas en buen estado, platos, correas, collares y juguetes.</li>
+                        <li><strong>Medicamentos y Cuidado Médico:</strong> Gasas, antisépticos, jabón antipulgas y champú para mascotas.</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta-info">
+                    <h3>¿Cómo entregar tu donación?</h3>
+                    <p>
+                        Puedes llevar tus aportaciones directamente al plantel durante nuestro horario de acopio. Al entregar tus suministros, el equipo de estudiantes te dará un recibo de agradecimiento.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>CBTis No. 116 | Proyecto Aula, Escuela y Comunidad (PAEC)<br>
+        Contacto: Crakedempire@gmail.com | Teléfono: 664 797 8827</p>
+    </footer>
+
+</body>
+</html>

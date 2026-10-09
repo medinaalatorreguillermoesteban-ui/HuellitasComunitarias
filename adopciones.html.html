@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Comunitarias - Adopciones</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fdfbf7;
+            color: #333333;
+        }
+        header {
+            background: #4a6b53;
+            color: white;
+            padding: 15px 20px;
+            border-bottom: 4px solid #e0a96d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #ffffff;
+        }
+        .barra-navegacion {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .botoncito-nav {
+            background: #38523f;
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .botoncito-nav.activo {
+            background: #e0a96d;
+            color: #333333;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            min-height: 500px;
+        }
+        aside {
+            width: 25%;
+            background: #f4ece1;
+            padding: 15px;
+            border-right: 2px solid #e0a96d;
+        }
+        section {
+            width: 75%;
+            background: #ffffff;
+            padding: 20px;
+        }
+        .sidebar-widget {
+            background: #ffffff;
+            border: 1px solid #dcdcdc;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .sidebar-widget h4 {
+            margin-top: 0;
+            border-bottom: 2px solid #e0a96d;
+            padding-bottom: 5px;
+            color: #4a6b53;
+        }
+        .sidebar-list {
+            padding-left: 18px;
+            margin: 0;
+            font-size: 13px;
+        }
+        .sidebar-list li {
+            padding: 4px 0;
+        }
+        .sidebar-list a {
+            color: #4a6b53;
+            text-decoration: none;
+        }
+        .galeria-adopcion {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .ficha-animal {
+            background: #f9f9f9;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            padding: 12px;
+        }
+        .ficha-animal img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .ficha-animal h3 {
+            margin-top: 0;
+            color: #4a6b53;
+            border-bottom: 1px solid #e0a96d;
+            padding-bottom: 5px;
+        }
+        .ficha-animal p {
+            font-size: 13px;
+            margin: 5px 0;
+        }
+        .badge-edad {
+            background: #e0a96d;
+            color: #333;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        footer {
+            background: #333333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 13px;
+        }
+        @media (max-width: 700px) {
+            main { display: block; }
+            aside, section { width: 100%; }
+            .galeria-adopcion { grid-template-columns: 1fr; }
+            header { flex-direction: column; text-align: center; }
+            .barra-navegacion { justify-content: center; margin-top: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Huellitas Comunitarias</h1>
+            <nav class="barra-navegacion">
+                <a href="index.html" class="botoncito-nav">Inicio</a>
+                <a href="adopciones.html" class="botoncito-nav activo">Adopciones</a>
+                <a href="donaciones.html" class="botoncito-nav">Donaciones</a>
+            </nav>
+        </div>
+        <img src="img/logo.jpg" alt="Logo Huellitas Comunitarias" style="width: 80px; height: auto; border-radius: 50%;">
+    </header>
+
+    <main>
+        <aside>
+            <div class="sidebar-widget">
+                <h4>Requisitos de Adopción</h4>
+                <ul class="sidebar-list">
+                    <li>Ser mayor de edad</li>
+                    <li>Identificación oficial</li>
+                    <li>Comprobante de domicilio</li>
+                    <li>Llenar solicitud de adopción</li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h4>¿Dudas?</h4>
+                <p style="font-size: 12px; margin: 0;">
+                    Comunícate al 664 797 8827 para agendar una cita y conocer a las mascotas.
+                </p>
+            </div>
+        </aside>
+
+        <section>
+            <article>
+                <h2>Galería de Adopciones</h2>
+                <p>Conoce a los perritos y gatitos que están buscando un hogar amoroso y responsable.</p>
+
+                <div class="galeria-adopcion">
+                    <!-- Ficha 1 -->
+                    <div class="ficha-animal">
+                        <img src="img/perro-max.jpg" alt="Foto de Max">
+                        <h3>Max <span class="badge-edad">2 Años</span></h3>
+                        <p><strong>Especie:</strong> Perro (Mestizo)</p>
+                        <p><strong>Carácter:</strong> Juguetón, sociable con niños y muy cariñoso.</p>
+                        <p><strong>Salud:</strong> Vacunado y desparasitado.</p>
+                    </div>
+
+                    <!-- Ficha 2 -->
+                    <div class="ficha-animal">
+                        <img src="img/gata-luna.jpg" alt="Foto de Luna">
+                        <h3>Luna <span class="badge-edad">1 Año</span></h3>
+                        <p><strong>Especie:</strong> Gata (Doméstica)</p>
+                        <p><strong>Carácter:</strong> Tranquila, le gusta dormir al sol y es muy limpia.</p>
+                        <p><strong>Salud:</strong> Esterilizada y desparasitada.</p>
+                    </div>
+
+                    <!-- Ficha 3 -->
+                    <div class="ficha-animal">
+                        <img src="img/perro-rocky.jpg" alt="Foto de Rocky">
+                        <h3>Rocky <span class="badge-edad">3 Años</span></h3>
+                        <p><strong>Especie:</strong> Perro (Mestizo)</p>
+                        <p><strong>Carácter:</strong> Protector, activo y le gusta salir a caminar.</p>
+                        <p><strong>Salud:</strong> Vacunación completa.</p>
+                    </div>
+
+                    <!-- Ficha 4 -->
+                    <div class="ficha-animal">
+                        <img src="img/gata-mimi.jpg" alt="Foto de Mimi">
+                        <h3>Mimi <span class="badge-edad">5 Meses</span></h3>
+                        <p><strong>Especie:</strong> Gata (Cachorra)</p>
+                        <p><strong>Carácter:</strong> Curiosa, activa y muy juguetona.</p>
+                        <p><strong>Salud:</strong> Primera dosis de vacunas y desparasitada.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>CBTis No. 116 | Proyecto Aula, Escuela y Comunidad (PAEC)<br>
+        Contacto: Crakedempire@gmail.com | Teléfono: 664 797 8827</p>
+    </footer>
+
+</body>
+</html>

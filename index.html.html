@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Comunitarias - Inicio</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fdfbf7;
+            color: #333333;
+        }
+        header {
+            background: #4a6b53;
+            color: white;
+            padding: 15px 20px;
+            border-bottom: 4px solid #e0a96d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #ffffff;
+        }
+        .barra-navegacion {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .botoncito-nav {
+            background: #38523f;
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .botoncito-nav.activo {
+            background: #e0a96d;
+            color: #333333;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            min-height: 500px;
+        }
+        aside {
+            width: 25%;
+            background: #f4ece1;
+            padding: 15px;
+            border-right: 2px solid #e0a96d;
+        }
+        section {
+            width: 75%;
+            background: #ffffff;
+            padding: 20px;
+        }
+        .sidebar-widget {
+            background: #ffffff;
+            border: 1px solid #dcdcdc;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .sidebar-widget h4 {
+            margin-top: 0;
+            border-bottom: 2px solid #e0a96d;
+            padding-bottom: 5px;
+            color: #4a6b53;
+        }
+        .sidebar-list {
+            padding-left: 18px;
+            margin: 0;
+            font-size: 13px;
+        }
+        .sidebar-list li {
+            padding: 4px 0;
+        }
+        .sidebar-list a {
+            color: #4a6b53;
+            text-decoration: none;
+        }
+        .hero-card {
+            background: #fcf8f2;
+            border-left: 5px solid #4a6b53;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 18px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .hero-card h2 {
+            margin-top: 0;
+            color: #4a6b53;
+        }
+        .img-destacada {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .tarjeta-info {
+            background: #f9f9f9;
+            border: 1px solid #dddddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .tarjeta-info h3 {
+            margin-top: 0;
+            color: #4a6b53;
+        }
+        footer {
+            background: #333333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 13px;
+        }
+        @media (max-width: 700px) {
+            main { display: block; }
+            aside, section { width: 100%; }
+            header { flex-direction: column; text-align: center; }
+            .barra-navegacion { justify-content: center; margin-top: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Huellitas Comunitarias</h1>
+            <nav class="barra-navegacion">
+                <a href="index.html" class="botoncito-nav activo">Inicio</a>
+                <a href="adopciones.html" class="botoncito-nav">Adopciones</a>
+                <a href="donaciones.html" class="botoncito-nav">Donaciones</a>
+            </nav>
+        </div>
+        <!-- Logo en la cabecera -->
+        <img src="img/logo.jpg" alt="Logo Huellitas Comunitarias" style="width: 80px; height: auto; border-radius: 50%;">
+    </header>
+
+    <main>
+        <aside>
+            <div class="sidebar-widget">
+                <h4>Menú Rápido</h4>
+                <ul class="sidebar-list">
+                    <li><a href="#proposito">Nuestro Propósito</a></li>
+                    <li><a href="#concientizacion">Bienestar Animal</a></li>
+                    <li><a href="#paec">Proyecto PAEC</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h4>Contacto</h4>
+                <p style="font-size: 12px; margin: 0;">
+                    CBTis No. 116<br>
+                    Correo: Crakedempire@gmail.com<br>
+                    Teléfono: 664 797 8827
+                </p>
+            </div>
+        </aside>
+
+        <section>
+            <article>
+                <div class="hero-card">
+                    <h2>Proyecto PAEC: Huellitas Comunitarias</h2>
+                    <p>
+                        Bienvenido al portal oficial de <strong>Huellitas Comunitarias</strong>, una iniciativa desarrollada por alumnos del CBTis No. 116 para concientizar sobre el cuidado, respeto y protección de las mascotas en nuestra comunidad.
+                    </p>
+                </div>
+
+                <!-- Imagen principal de la sección -->
+                <img src="img/mascotas-inicio.jpg" alt="Perro y gato juntos" class="img-destacada">
+
+                <div class="tarjeta-info" id="proposito">
+                    <h3>¿Cuál es nuestro propósito?</h3>
+                    <p>
+                        Buscamos reducir el abandono de perros y gatos promoviendo la adopción responsable, la esterilización y el apoyo comunitario a través de acopios de alimento y suministros para refugios locales.
+                    </p>
+                </div>
+
+                <div class="tarjeta-info" id="concientizacion">
+                    <h3>Concientización sobre el Bienestar Animal</h3>
+                    <p>
+                        Tener una mascota es un compromiso de muchos años. Los animales necesitan alimento, atención médica, un espacio limpio y sobre todo mucho cariño. Antes de adoptar, asegúrate de contar con el tiempo y los recursos para darle una buena calidad de vida.
+                    </p>
+                </div>
+
+                <div class="tarjeta-info" id="paec">
+                    <h3>Sobre nuestro proyecto escolar</h3>
+                    <p>
+                        Este sitio forma parte del Programa Aula, Escuela y Comunidad (PAEC), donde combinamos el aprendizaje técnico con causas sociales que benefician a nuestro entorno.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>CBTis No. 116 | Proyecto Aula, Escuela y Comunidad (PAEC)<br>
+        Contacto: Crakedempire@gmail.com | Teléfono: 664 797 8827</p>
+    </footer>
+
+</body>
+</html>
